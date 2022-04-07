@@ -10,9 +10,9 @@ export interface ContactProps {
 export default function Contact (props: ContactProps) {
   return (
     <div className="contact flex justify-center mx-auto w-[100vw] h-[100vh]">
-        <div className="w-3/4 flex">
-            <div className="flex-[0_0_40%] ">
-                <h2 className="font-medium leading-tight text-6xl my-4">Contact Info</h2>
+        <div className="w-5/6 flex flex-col">
+            <div className="md:flex-[0_0_40%] mb-4">
+                <h2 className="font-medium leading-tight text-5xl my-4">Contact Info</h2>
                 <div className="adress flex">
                     <span><LocationOnIcon /></span>
                     <p className="ml-2">Adress: HH2A Linh Đàm</p>
@@ -30,8 +30,8 @@ export default function Contact (props: ContactProps) {
                     <p className="ml-2">Facebook: https://www.facebook.com/nqhien97</p>
                 </div>
             </div>
-            <div className="flex-[0_0_60%] px-4">
-                <h2 className="font-medium leading-tight text-6xl my-4">Contact Form</h2>
+            <div className="md:flex-[0_0_60%]">
+                <h2 className="font-medium leading-tight text-5xl my-4">Contact Form</h2>
                 <form>
                     <div className="flex flex-wrap">
                         <div className="flex-[0_0_50%] mb-2 pr-2">
