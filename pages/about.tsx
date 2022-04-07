@@ -6,7 +6,7 @@ export interface AboutProps {
 export default function About (props: AboutProps) {
   return (
     <>
-      <div id="about" className="bg-bg-home bg-no-repeat bg-cover bg-center bg-white border-gray-200">
+      <div id="about" className="about bg-bg-home bg-no-repeat bg-cover bg-center bg-white border-gray-200">
         <div className="flex justify-center items-center md:flex-row flex-col mx-auto w-[100vw] h-[100vh] w-3/4">
           <div className="flex items-center md:flex-1">
             <div className="inset-y-1/3 text-white flex flex-col">

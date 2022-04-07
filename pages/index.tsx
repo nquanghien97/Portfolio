@@ -4,6 +4,8 @@ import styles from '../styles/Home.module.css'
 import NavBar from './navbar'
 import HomePage from './home'
 import About from './about'
+import MyPortfolio from './portfolio'
+import Contact from './contact'
 
 const Home: NextPage = () => {
   return (
@@ -16,6 +18,8 @@ const Home: NextPage = () => {
       <NavBar />
       <HomePage />
       <About />
+      <MyPortfolio />
+      <Contact />
     </div>
   )
 }
