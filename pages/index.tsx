@@ -6,6 +6,7 @@ import HomePage from './home'
 import About from './about'
 import MyPortfolio from './portfolio'
 import Contact from './contact'
+import Footer from './footer'
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
       <About />
       <MyPortfolio />
       <Contact />
+      <Footer />
     </div>
   )
 }
