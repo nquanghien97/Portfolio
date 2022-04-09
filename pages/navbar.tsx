@@ -14,7 +14,7 @@ export default function NavBar (props: NavBarProps) {
     }
     return (
         <>
-            <div className=" navbar fixed top-0 right-0 left-0 flex justify-center dark:bg-gray-800 border-gray-200 z-10">
+            <div className="navbar fixed top-0 right-0 left-0 flex justify-center dark:bg-gray-800 border-gray-200 z-10">
                 <nav className="w-5/6 px-2 sm:px-4 py-1 ">
                     <div className="container flex flex-wrap justify-between items-center mx-auto">
                         <div className="flex justify-center w-16 h-16 border border-black rounded-full bg-slate-300 pr-2">

@@ -9,7 +9,7 @@ export interface ContactProps {
 
 export default function Contact (props: ContactProps) {
   return (
-    <div className="contact flex justify-center mx-auto w-[100vw] h-[100vh]">
+    <div className="contact flex justify-center mx-auto w-[100vw] mb-12">
         <div className="w-5/6 flex md:flex-row flex-col">
             <div className="md:flex-[0_0_40%] mb-4">
                 <h2 className="font-medium leading-tight text-5xl my-4">Contact Info</h2>
