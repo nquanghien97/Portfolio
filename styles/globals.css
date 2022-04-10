@@ -18,3 +18,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.image:hover > .overlay {
+  display: flex
+}
