@@ -1,6 +1,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar } from 'swiper';
+import Fade from 'react-reveal/Fade';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
@@ -16,7 +17,9 @@ export interface  MyPortfolioProps {
 
 export default function MyPortfolio (props: MyPortfolioProps) {
   return (
-    <div className="portfolio flex justify-center mx-auto w-[100vw]">
+    <>
+      <Fade left>
+    <div id="portfolio" className="portfolio flex justify-center mx-auto pb-12">
       <div className="text-black w-5/6 flex flex-col justify-center items-center">
         <h1 className="font-medium leading-tight text-5xl my-4">My Project</h1>
         <p>I love what I do. I take great pride in what I do.</p>
@@ -90,8 +93,9 @@ export default function MyPortfolio (props: MyPortfolioProps) {
             </SwiperSlide>
           </Swiper>
         </div>
-        
       </div>
     </div>
+      </Fade>
+    </>
   );
 }

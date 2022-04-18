@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 
 export interface AboutProps {
 }
@@ -6,8 +7,9 @@ export interface AboutProps {
 export default function About (props: AboutProps) {
   return (
     <>
-      <div id="about" className="about bg-no-repeat bg-cover bg-center bg-white border-gray-200">
-        <div className="flex justify-center items-center md:flex-row flex-col mx-auto w-[100vw] my-16 w-3/4">
+    <Fade left>
+      <div id="about" className="bg-no-repeat bg-cover bg-center bg-white border-gray-200">
+        <div className="flex justify-center items-center md:flex-row flex-col mx-auto w-[100vw] py-16 w-3/4">
           <div className="flex items-center md:flex-1">
             <div className="inset-y-1/3 text-white flex flex-col">
               <h1 className="font-medium leading-tight text-6xl mt-2 mb-2 text-black">
@@ -37,6 +39,7 @@ export default function About (props: AboutProps) {
           </div>
         </div>
       </div>
+    </Fade>
     </>
   );
 }

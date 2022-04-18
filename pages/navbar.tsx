@@ -3,6 +3,7 @@ import Image from 'next/image';
 import logo from '../Assets/logo1.png';
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
+import Link from 'next/link';
 
 export interface NavBarProps {
 
@@ -39,16 +40,26 @@ export default function NavBar (props: NavBarProps) {
                         <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
                             <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-base md:font-medium">
                                 <li>
-                                <a href="#home" className="text-xl block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
+                                    <Link href="#home" >
+                                        <a className="text-xl block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">
+                                            Home
+                                        </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                <a href="#about" className="text-xl block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                                    <Link href="#about">
+                                        <a className="text-xl block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                                    </Link>
                                 </li>
                                 <li>
-                                <a href="#" className="text-xl block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+                                    <Link href="#portfolio">
+                                        <a className="text-xl block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Portfolio</a>
+                                    </Link>
                                 </li>
                                 <li>
-                                <a href="#" className="text-xl block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                                    <Link href="#contact">
+                                        <a className="text-xl block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                                    </Link>
                                 </li>
                             </ul>
                         </div>
@@ -63,10 +74,10 @@ export default function NavBar (props: NavBarProps) {
         return(
             <div className="max-w-screen-lg fixed h-screen w-full right-0 bg-zinc-200/[0.6] -z-50 pt-4 px-4 sm:w-1/4 lg:hidden top-[72px]">
                 <ul className="menu-list flex flex-col text-xs font-bold text-xl">
-                    <li className="menu-list-item py-3 text-xl"><a href="#">Home</a></li>
-                    <li className="menu-list-item py-3 text-xl"><a href="#">About</a></li>
-                    <li className="menu-list-item py-3 text-xl"><a href="#">Services</a></li>
-                    <li className="menu-list-item py-3 text-xl"><a href="#">Contact</a></li>
+                    <li className="menu-list-item py-2 my-4 text-xl border-black border-b-2"><a href="#home">Home</a></li>
+                    <li className="menu-list-item py-2 my-4 text-xl border-black border-b-2"><a href="#about">About</a></li>
+                    <li className="menu-list-item py-2 my-4 text-xl border-black border-b-2"><a href="#portfolio">Portfolio</a></li>
+                    <li className="menu-list-item py-2 my-4 text-xl border-black border-b-2"><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         )

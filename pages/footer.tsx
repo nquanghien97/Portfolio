@@ -10,7 +10,7 @@ export interface FooterProps {
 
 export default function Footer (props: FooterProps) {
   return (
-    <div className="footer bg-indigo-900 flex justify-center">
+    <div id="footer" className="footer bg-indigo-900 flex justify-center">
         <div className="flex flex-col justify-center">
             <div className="logo flex justify-center my-2 w-16 h-16 border border-black rounded-full bg-slate-300 m-auto mt-2 pr-2">
                 <a href="#" className="flex items-center">
