@@ -8,7 +8,7 @@ export default function About (props: AboutProps) {
   return (
     <>
     <Fade left>
-      <div id="about" className="bg-no-repeat bg-cover bg-center bg-white border-gray-200">
+      <div id="about" className="bg-no-repeat bg-cover bg-center bg-white border-gray-200 mt-12 relative top-[-1px]">
         <div className="flex justify-center items-center md:flex-row flex-col mx-auto w-[100vw] py-16 w-3/4">
           <div className="flex items-center md:flex-1">
             <div className="inset-y-1/3 text-white flex flex-col">

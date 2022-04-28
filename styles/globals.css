@@ -23,3 +23,7 @@ a {
 .image:hover > .overlay {
   display: flex;
 }
+
+.active {
+  color: blue;
+}

@@ -11,7 +11,7 @@ export interface HomeProps {
 export default function HomePage (props: HomeProps) {
   return (
     <>
-      <div id="home" className="home bg-bg-home bg-no-repeat bg-cover bg-center bg-white border-gray-200 overflow-x-hidden ">
+      <div id="home" className="home bg-bg-home bg-no-repeat bg-cover bg-center bg-white border-gray-200 overflow-x-hidden mb-5">
         <Fade left>
           <div className="relative flex justify-center mx-auto w-[100vw] h-[100vh]">
             <div className="absolute inset-y-1/3 text-white w-3/4 flex flex-col justify-center items-center">

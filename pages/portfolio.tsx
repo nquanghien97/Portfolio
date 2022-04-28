@@ -19,7 +19,7 @@ export default function MyPortfolio (props: MyPortfolioProps) {
   return (
     <>
       <Fade left>
-    <div id="portfolio" className="portfolio flex justify-center mx-auto pb-12">
+    <div id="portfolio" className="flex justify-center mx-auto mb-12 pt-8">
       <div className="text-black w-5/6 flex flex-col justify-center items-center">
         <h1 className="font-medium leading-tight text-5xl my-4">My Project</h1>
         <p>I love what I do. I take great pride in what I do.</p>

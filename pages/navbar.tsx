@@ -40,7 +40,7 @@ export default function NavBar (props: NavBarProps) {
                         {(isOpen) ? SideMenu() : ''}
                         <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
                             <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-base md:font-medium">
-                                <li>
+                                <li className="cursor-pointer text-xl block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">
                                     <Link 
                                         activeClass="active"
                                         to="home"
@@ -49,12 +49,10 @@ export default function NavBar (props: NavBarProps) {
                                         offset={-70}
                                         duration={500}
                                     >
-                                        <a className="cursor-pointer text-xl block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">
-                                            Home
-                                        </a>
+                                        Home
                                     </Link>
                                 </li>
-                                <li>
+                                <li className="cursor-pointer text-xl block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
                                     <Link 
                                         activeClass="active"
                                         to="about"
@@ -63,10 +61,10 @@ export default function NavBar (props: NavBarProps) {
                                         offset={-70}
                                         duration={500}
                                     >
-                                        <a className="cursor-pointer text-xl block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                                        About
                                     </Link>
                                 </li>
-                                <li>
+                                <li className="cursor-pointer text-xl block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
                                     <Link 
                                         activeClass="active"
                                         to="portfolio"
@@ -75,10 +73,10 @@ export default function NavBar (props: NavBarProps) {
                                         offset={-70}
                                         duration={500}
                                     >
-                                        <a className="cursor-pointer text-xl block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Portfolio</a>
+                                        Portfolio
                                     </Link>
                                 </li>
-                                <li>
+                                <li className="cursor-pointer text-xl block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
                                     <Link 
                                         activeClass="active"
                                         to="contact"
@@ -87,7 +85,7 @@ export default function NavBar (props: NavBarProps) {
                                         offset={-70}
                                         duration={500}
                                     >
-                                        <a className="cursor-pointer text-xl block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                                        Contact
                                     </Link>
                                 </li>
                             </ul>
@@ -112,7 +110,7 @@ export default function NavBar (props: NavBarProps) {
                             offset={-70}
                             duration={500}
                         >
-                            <a>Home</a>
+                            Home
                         </Link>
                     </li>
                     <li className="menu-list-item py-2 my-4 text-xl border-black border-b-2">
@@ -124,7 +122,7 @@ export default function NavBar (props: NavBarProps) {
                         offset={-70}
                         duration={500}
                     >
-                        <a>About</a>
+                        About
                     </Link>
                     </li>
                     <li className="menu-list-item py-2 my-4 text-xl border-black border-b-2">
@@ -136,7 +134,7 @@ export default function NavBar (props: NavBarProps) {
                         offset={-70}
                         duration={500}
                     >
-                        <a>Portfolio</a>
+                        Portfolio
                     </Link>
                     </li>
                     <li className="menu-list-item py-2 my-4 text-xl border-black border-b-2">
@@ -148,7 +146,7 @@ export default function NavBar (props: NavBarProps) {
                         offset={-70}
                         duration={500}
                     >
-                        <a>Contact</a>
+                        Contact
                     </Link>
                     </li>
                 </ul>

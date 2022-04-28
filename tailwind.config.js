@@ -21,6 +21,9 @@ module.exports = {
     backgroundImage: {
       'bg-home': "url('../Assets/bg-home.jpg')"
     },
+    top: {
+      '-1px': '-1px'
+    }
   },
   plugins: [],
 }
