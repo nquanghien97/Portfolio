@@ -12,7 +12,7 @@ export default function Contact (props: ContactProps) {
   return (
       <>
         <Fade left>
-            <div id="contact" className="contact flex justify-center mx-auto mb-12 pt-8">
+            <div id="contact" className="contact flex justify-center mx-auto md:py-28 pb-8">
                 <div className="w-5/6 flex md:flex-row flex-col">
                     <div className="md:flex-[0_0_40%] mb-4">
                         <h2 className="font-medium leading-tight text-5xl my-4">Contact Info</h2>

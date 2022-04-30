@@ -64,7 +64,7 @@ export default function MyPortfolio (props: MyPortfolioProps) {
                 <div className="overlay absolute inset-0 bg-gray-300/[0.7] flex justify-center items-center hidden">
                   <a 
                     href="https://nquanghien97.github.io/MusicPlayer/"
-                    className="absolute top-1/2 right-1/2 translate-x-2/4 px-8 py-4 bg-sky-800 hover:bg-amber-500 rounded text-white"
+                    className="absolute px-8 py-4 bg-sky-800 hover:bg-amber-500 rounded text-white"
                   >
                     Visit now
                     <ArrowRightAltIcon className="ml-2"/>
@@ -83,7 +83,7 @@ export default function MyPortfolio (props: MyPortfolioProps) {
                 <div className="overlay absolute inset-0 bg-gray-300/[0.7] flex justify-center items-center hidden">
                   <a 
                     href="https://hien-teslaclone.netlify.app/"
-                    className="absolute top-1/2 right-1/2 translate-x-2/4 px-8 py-4 bg-sky-800 hover:bg-amber-500 rounded text-white"
+                    className="absolute px-8 py-4 bg-sky-800 hover:bg-amber-500 rounded text-white"
                   >
                     Visit now
                     <ArrowRightAltIcon className="ml-2"/>

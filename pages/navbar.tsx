@@ -17,7 +17,7 @@ export default function NavBar (props: NavBarProps) {
     return (
         <>
             <div className="navbar fixed top-0 right-0 left-0 flex justify-center dark:bg-gray-800 border-gray-200 z-10">
-                <nav className="w-5/6 px-2 sm:px-4 py-1 ">
+                <nav className="w-5/6 px-2 md:px-4 py-1 ">
                     <div className="container flex flex-wrap justify-between items-center mx-auto">
                         <div className="flex justify-center w-16 h-16 border border-black rounded-full bg-slate-300 pr-2">
                             <a href="#" className="flex items-center">
@@ -99,9 +99,9 @@ export default function NavBar (props: NavBarProps) {
 
     function SideMenu(){
         return(
-            <div className="max-w-screen-lg fixed h-screen w-full right-0 bg-zinc-200/[0.6] -z-50 pt-4 px-4 sm:w-1/4 lg:hidden top-[72px]">
+            <div className="max-w-screen-lg fixed h-screen w-full right-0 bg-zinc-200/[0.6] -z-50 pt-4 px-4 md:w-1/4 md:hidden top-[72px]">
                 <ul className="menu-list flex flex-col text-xs font-bold text-xl">
-                    <li className="menu-list-item py-2 my-4 text-xl border-black border-b-2">
+                    <li className="menu-list-item py-2 my-4 text-xl border-black border-b-2 cursor-pointer">
                         <Link 
                             activeClass="active"
                             to="home"
@@ -113,7 +113,7 @@ export default function NavBar (props: NavBarProps) {
                             Home
                         </Link>
                     </li>
-                    <li className="menu-list-item py-2 my-4 text-xl border-black border-b-2">
+                    <li className="menu-list-item py-2 my-4 text-xl border-black border-b-2 cursor-pointer">
                     <Link 
                         activeClass="active"
                         to="about"
@@ -125,7 +125,7 @@ export default function NavBar (props: NavBarProps) {
                         About
                     </Link>
                     </li>
-                    <li className="menu-list-item py-2 my-4 text-xl border-black border-b-2">
+                    <li className="menu-list-item py-2 my-4 text-xl border-black border-b-2 cursor-pointer">
                     <Link 
                         activeClass="active"
                         to="portfolio"
@@ -137,7 +137,7 @@ export default function NavBar (props: NavBarProps) {
                         Portfolio
                     </Link>
                     </li>
-                    <li className="menu-list-item py-2 my-4 text-xl border-black border-b-2">
+                    <li className="menu-list-item py-2 my-4 text-xl border-black border-b-2 cursor-pointer">
                     <Link 
                         activeClass="active"
                         to="contact"
