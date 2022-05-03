@@ -7,6 +7,7 @@ import About from './about'
 import MyPortfolio from './portfolio'
 import Contact from './contact'
 import Footer from './footer'
+import FbmessProps from './fbmess'
 
 const Home: NextPage = () => {
   return (
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
       <MyPortfolio />
       <Contact />
       <Footer />
+      <FbmessProps />
     </div>
   )
 }
