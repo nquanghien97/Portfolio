@@ -7,7 +7,6 @@ import About from './about'
 import MyPortfolio from './portfolio'
 import Contact from './contact'
 import Footer from './footer'
-import FacebookChat from './facebook'
 
 const Home: NextPage = () => {
   return (
@@ -23,7 +22,6 @@ const Home: NextPage = () => {
       <MyPortfolio />
       <Contact />
       <Footer />
-      <FacebookChat />
     </div>
   )
 }
