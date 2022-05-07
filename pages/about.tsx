@@ -1,5 +1,7 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
+import Image from 'next/image';
+import adidas from '../Assets/avatar.png'
 
 export interface AboutProps {
 }
@@ -35,7 +37,7 @@ export default function About (props: AboutProps) {
             </div>
           </div>
           <div className="flex md:flex-1 text-black">
-            abc
+            <Image src={adidas} alt=""/>
           </div>
         </div>
       </div>
