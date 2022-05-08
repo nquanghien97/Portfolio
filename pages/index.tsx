@@ -7,6 +7,7 @@ import About from './about'
 import MyPortfolio from './portfolio'
 import Contact from './contact'
 import Footer from './footer'
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 const Home: NextPage = () => {
   return (
@@ -22,6 +23,12 @@ const Home: NextPage = () => {
       <MyPortfolio />
       <Contact />
       <Footer />
+      <div>
+        <MessengerCustomerChat
+              pageId="101380578051500"
+              appId="3228824117442850"
+          />,
+        </div>
     </div>
   )
 }

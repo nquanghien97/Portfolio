@@ -1,14 +1,30 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import Fade from 'react-reveal/Fade';
+import emailjs from '@emailjs/browser';
 
 export interface ContactProps {
 }
 
 export default function Contact (props: ContactProps) {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs.sendForm('nquanghien97', 'template_sj1vbhn', e.target, 'fyQXTkIk7xG-acE0o')
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+          e.target.reset()
+    };
+
   return (
       <>
         <Fade left>
@@ -35,7 +51,7 @@ export default function Contact (props: ContactProps) {
                     </div>
                     <div className="md:flex-[0_0_60%]">
                         <h2 className="font-medium leading-tight text-5xl my-4">Contact Form</h2>
-                        <form>
+                        <form onSubmit={sendEmail}>
                             <div className="flex flex-wrap">
                                 <div className="flex-[0_0_50%] mb-2 pr-2">
                                     <input required placeholder="Your Name" type="text" name="name" className="w-full px-1.5 py-3 border border-black rounded">
@@ -43,17 +59,17 @@ export default function Contact (props: ContactProps) {
                                     </input>
                                 </div>
                                 <div className="flex-[0_0_50%] mb-2 pl-2">
-                                    <input required placeholder="Your Email" type="text" name="name" className="w-full px-1.5 py-3 border border-black rounded">
+                                    <input required placeholder="Your Email" type="text" name="email" className="w-full px-1.5 py-3 border border-black rounded">
                                     
                                     </input>
                                 </div>
                                 <div className="flex-[0_0_50%] my-2 pr-2">
-                                    <input required placeholder="Subject" type="text" name="name" className="w-full px-1.5 py-3 border border-black rounded">
+                                    <input required placeholder="Subject" type="text" name="subject" className="w-full px-1.5 py-3 border border-black rounded">
                                     
                                     </input>
                                 </div>
                                 <div className="flex-[0_0_50%] my-2 pl-2">
-                                    <input required placeholder="Phone" type="text" name="name" className="w-full px-1.5 py-3 border border-black rounded" />
+                                    <input required placeholder="PhoneNumber" type="text" name="phonenumber" className="w-full px-1.5 py-3 border border-black rounded" />
                                 </div>
                             </div>
                             <textarea name="message" rows={6} placeholder="Your message..." className="w-full px-2 border border-black my-2 rounded"></textarea>
