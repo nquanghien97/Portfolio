@@ -27,8 +27,8 @@ const Home: NextPage = () => {
         <MessengerCustomerChat
               pageId="101380578051500"
               appId="3228824117442850"
-          />,
-        </div>
+          />
+      </div>
     </div>
   )
 }
