@@ -1,7 +1,7 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import Image from 'next/image';
-import adidas from '../Assets/avatar.png'
+import avatar from '../Assets/avatar.png'
 
 export interface AboutProps {
 }
@@ -28,16 +28,13 @@ export default function About (props: AboutProps) {
               </p>
               <div className="flex flex-col md:flex-row">
                 <div className="flex justify-center bg-sky-800 border border-black md:px-10 px-4 py-4 md:mr-4 md:my-8 my-4 cursor-pointer rounded hover:bg-amber-500 hover:border-black hover:text-black">
-                  <a className="">Hire Me</a>
-                </div>
-                <div className="flex justify-center bg-sky-800 border border-black md:px-10 px-4 py-4 md:mr-4 md:my-8 my-4 cursor-pointer rounded hover:bg-amber-500 hover:border-black hover:text-black">
-                  <a className="">Download CV</a>
+                  <a className="" href="/cv.pdf" download>Download CV</a>
                 </div>
               </div>
             </div>
           </div>
           <div className="flex md:flex-1 text-black">
-            <Image src={adidas} alt=""/>
+            <Image src={avatar} alt=""/>
           </div>
         </div>
       </div>
