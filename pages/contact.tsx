@@ -42,15 +42,15 @@ export default function Contact (props: ContactProps) {
                         </div>
                         <div className="phone flex my-4">
                             <span><PhoneIcon /></span>
-                            <p className="ml-2">Phone: 035.4664.880</p>
+                            <a href="tel:0354664880" className="ml-2">Phone: 035.4664.880</a>
                         </div>
                         <div className="email flex my-4">
                             <span><EmailIcon /></span>
-                            <p className="ml-2">Email: nquanghien97@gmail.com</p>
+                            <a href="mailto:nquanghien97@gmail.com" className="ml-2">Email: nquanghien97@gmail.com</a>
                         </div>
                         <div className="facebook flex my-4">
                             <span><FacebookIcon /></span>
-                            <p className="ml-2">Facebook: https://www.facebook.com/nqhien97</p>
+                            <a href="https://www.facebook.com/nqhien97" className="ml-2">Facebook: https://www.facebook.com/nqhien97</a>
                         </div>
                     </div>
                     <div className="md:flex-[0_0_60%]">
