@@ -16,7 +16,15 @@ export default function HomePage (props: HomeProps) {
           <div className="relative flex justify-center mx-auto w-[100vw] h-[100vh]">
             <div className="absolute inset-y-1/3 text-white w-3/4 flex flex-col justify-center items-center">
                 <h4 className="font-medium leading-tight text-2xl mt-0 mb-4 uppercase">Hello</h4>
-                <h1 className="font-medium leading-tight text-6xl mt-2 mb-2">I am NQH</h1>
+                <div className="text-window">
+                  <h1 className="animate-charcter text-6xl mt-2 mb-2 p-4">I'm&nbsp;Nguyen&nbsp;Quang&nbsp;Hien</h1>
+                </div>
+                <div className="text-mobile">
+                  <h1 className="animate-charcter">I'm</h1><br/>
+                  <h1 className="animate-charcter">Nguyen</h1><br/>
+                  <h1 className="animate-charcter">Quang</h1><br/>
+                  <h1 className="animate-charcter">Hien</h1>
+                </div>
                 <h4 className="font-medium leading-tight text-2xl mt-2 mb-6">Front-end Developer</h4>
                 <ul className="flex">
                   <div className="w-10 h-10 bg-slate-200/[0.4] flex justify-center items-center rounded-full cursor-pointer hover:bg-rose-500 mx-1">
