@@ -38,7 +38,7 @@ export default function Contact (props: ContactProps) {
                         <h2 className="font-medium leading-tight text-5xl my-4">Contact Info</h2>
                         <div className="adress flex">
                             <span><LocationOnIcon /></span>
-                            <p className="ml-2">Adress: HH2A Linh Đàm</p>
+                            <p className="ml-2">Adress: Quận Hoàng Mai - Hà Nội</p>
                         </div>
                         <div className="phone flex my-4">
                             <span><PhoneIcon /></span>

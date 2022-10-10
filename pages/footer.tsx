@@ -5,10 +5,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
-export interface FooterProps {
-}
-
-export default function Footer (props: FooterProps) {
+export default function Footer () {
   return (
     <div id="footer" className="footer bg-indigo-900 flex justify-center">
         <div className="flex flex-col justify-center">
