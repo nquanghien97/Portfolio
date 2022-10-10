@@ -77,7 +77,7 @@ export default function Contact (props: ContactProps) {
                                 </div>
                             </div>
                             <textarea name="message" rows={6} placeholder="Your message..." className="w-full px-2 border border-black my-2 rounded"></textarea>
-                            <button onClick={() => notification()} type="submit" className="px-8 py-4 border border-black hover:bg-slate-500 hover:text-white rounded">
+                            <button onClick={notification} type="submit" className="px-8 py-4 border border-black hover:bg-slate-500 hover:text-white rounded">
                                 Send Message
                             </button>
                         </form>

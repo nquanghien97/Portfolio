@@ -21,10 +21,7 @@ export default function About (props: AboutProps) {
                 Front-End Developer
               </h4>
               <p className="text-black">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry 
-              standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 
-              make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, 
-              remaining essentially unchanged.
+                I like to code things from scratch, and enjoy bringing ideas to life in the browser.
               </p>
               <div className="flex flex-col md:flex-row">
                 <div className="flex justify-center bg-sky-800 border border-black md:px-10 px-4 py-4 md:mr-4 md:my-8 my-4 cursor-pointer rounded hover:bg-amber-500 hover:border-black hover:text-black">

@@ -10,12 +10,10 @@ import Image from 'next/image';
 import adidas from '../Assets/adidas.png'
 import music from '../Assets/music.png'
 import tesla from '../Assets/tesla.png'
+import crudCountry from '../Assets/crud-country.png'
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 
-export interface  MyPortfolioProps {
-}
-
-export default function MyPortfolio (props: MyPortfolioProps) {
+export default function MyPortfolio () {
   return (
     <>
       <Fade left>
@@ -40,11 +38,30 @@ export default function MyPortfolio (props: MyPortfolioProps) {
                   src={adidas} 
                   layout="fill"
                   className="-z-10" 
-                  alt="Adidas"
+                  alt="Ecommerce Website"
                 />
                 <div className="overlay absolute inset-0 bg-gray-300/[0.7] flex justify-center items-center hidden">
                   <a 
-                    href="https://hien-adidasclone.netlify.app/"
+                    href="https://hien-ecommerce.netlify.app/"
+                    className="absolute px-8 py-4 bg-sky-800 hover:bg-amber-500 rounded text-white"
+                  >
+                    Visit now
+                    <ArrowRightAltIcon className="ml-2"/>
+                  </a>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="image w-full h-[30vh] md:h-[100vh] relative">
+                <Image
+                  src={crudCountry} 
+                  layout="fill"
+                  className="-z-10" 
+                  alt="CRUD country"
+                />
+                <div className="overlay absolute inset-0 bg-gray-300/[0.7] flex justify-center items-center hidden">
+                  <a 
+                    href="https://crud-country.netlify.app/"
                     className="absolute px-8 py-4 bg-sky-800 hover:bg-amber-500 rounded text-white"
                   >
                     Visit now
