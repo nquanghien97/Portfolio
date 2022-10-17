@@ -26,8 +26,6 @@ export default function MyPortfolio () {
           <Swiper
             modules={[Navigation, Pagination, Scrollbar]}
             slidesPerView={1}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
             navigation
             pagination={{ clickable: true }}
             // scrollbar={{ draggable: true }}

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import { useState } from 'react';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import PhoneIcon from '@material-ui/icons/Phone';
 import EmailIcon from '@material-ui/icons/Email';
@@ -6,28 +6,27 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import Fade from 'react-reveal/Fade';
 import emailjs from '@emailjs/browser';
 
-export interface ContactProps {
-}
+export default function Contact () {
 
-export default function Contact (props: ContactProps) {
-
-    const form = useRef();
+    const [error, setError] = useState('')
 
     const sendEmail = (e) => {
         e.preventDefault();
     
         emailjs.sendForm('nquanghien97', 'template_sj1vbhn', e.target, 'fyQXTkIk7xG-acE0o')
           .then((result) => {
-              console.log(result.text);
+              console.log(result);
+              setError("Gửi thành công")
           }, (error) => {
               console.log(error.text);
+              setError("Gửi thất bại...Vui lòng thử lại")
           });
           e.target.reset()
+          setTimeout(() =>{
+              setError('')
+          }, 3000)
     };
-
-    const notification = () => {
-        alert('Send message successfully')
-    }
+    
 
   return (
       <>
@@ -77,10 +76,11 @@ export default function Contact (props: ContactProps) {
                                 </div>
                             </div>
                             <textarea name="message" rows={6} placeholder="Your message..." className="w-full px-2 border border-black my-2 rounded"></textarea>
-                            <button onClick={notification} type="submit" className="px-8 py-4 border border-black hover:bg-slate-500 hover:text-white rounded">
+                            <button type="submit" className="px-8 py-4 border border-black hover:bg-slate-500 hover:text-white rounded">
                                 Send Message
                             </button>
                         </form>
+                        {error && (<div className="fixed top-5 right-5 bg-red-200 w-52 h-9 flex items-center justify-center rounded">{error}</div>)}
                     </div>
                 </div>
             </div>
