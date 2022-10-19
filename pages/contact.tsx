@@ -81,7 +81,8 @@ export default function Contact () {
                                 Send Message
                             </button>
                         </form>
-                        {error && (<div className="absolute top-5 right-5 bg-red-200 w-52 h-9 flex items-center justify-center rounded">Gửi thành công</div>)}
+                        {error && (<div className="absolute top-5 right-0 bg-red-200 w-52 h-9 flex items-center justify-center rounded">Gửi thành công<CheckCircleOutlineIcon style={{color: 'green', margin:'0 4px'}}/></div>)}
+                        
                     </div>
                 </div>
             </div>
