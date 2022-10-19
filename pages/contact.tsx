@@ -52,7 +52,7 @@ export default function Contact () {
                             <a href="https://www.facebook.com/nqhien97" className="ml-2">Facebook: https://www.facebook.com/nqhien97</a>
                         </div>
                     </div>
-                    <div className="md:flex-[0_0_60%]">
+                    <div className="relative md:flex-[0_0_60%]">
                         <h2 className="font-medium leading-tight text-5xl my-4">Contact Form</h2>
                         <form onSubmit={sendEmail}>
                             <div className="flex flex-wrap">
@@ -80,7 +80,8 @@ export default function Contact () {
                                 Send Message
                             </button>
                         </form>
-                        {error && (<div className="fixed top-5 right-5 bg-red-200 w-52 h-9 flex items-center justify-center rounded">{error}</div>)}
+                        {error && (<div className="absolute top-5 right-5 bg-red-200 w-52 h-9 flex items-center justify-center rounded">Gửi thành công</div>)}
+                        <div className="absolute top-5 right-0 bg-red-200 w-52 h-9 flex items-center justify-center rounded">Gửi thành công</div>
                     </div>
                 </div>
             </div>
