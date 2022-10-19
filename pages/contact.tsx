@@ -5,6 +5,7 @@ import EmailIcon from '@material-ui/icons/Email';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import Fade from 'react-reveal/Fade';
 import emailjs from '@emailjs/browser';
+import CheckCircleOutlineIcon from '@material-ui/icons/CheckCircleOutline';
 
 export default function Contact () {
 
@@ -81,7 +82,7 @@ export default function Contact () {
                             </button>
                         </form>
                         {error && (<div className="absolute top-5 right-5 bg-red-200 w-52 h-9 flex items-center justify-center rounded">Gửi thành công</div>)}
-                        <div className="absolute top-5 right-0 bg-red-200 w-52 h-9 flex items-center justify-center rounded">Gửi thành công</div>
+                        <div className="absolute top-5 right-0 bg-red-200 w-52 h-9 flex items-center justify-center rounded">Gửi thành công<CheckCircleOutlineIcon style={{color: 'green', margin:'0 4px'}}/></div>
                     </div>
                 </div>
             </div>
