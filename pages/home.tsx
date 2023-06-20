@@ -4,11 +4,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import Fade from 'react-reveal/Fade';
 
-export interface HomeProps {
-}
-
-
-export default function HomePage (props: HomeProps) {
+export default function HomePage () {
   return (
     <>
       <div id="home" className="home bg-bg-home bg-no-repeat bg-cover bg-center bg-white border-gray-200 overflow-x-hidden mb-5">

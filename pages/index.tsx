@@ -25,9 +25,9 @@ const Home: NextPage = () => {
       <Footer />
       <div>
         <MessengerCustomerChat
-              pageId="101380578051500"
-              appId="3228824117442850"
-          />
+          pageId="101380578051500"
+          appId="3228824117442850"
+        />
       </div>
     </div>
   )
