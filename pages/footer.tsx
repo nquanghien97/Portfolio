@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../Assets/logo1.png';
+import logo from '../assets/logo1.png';
 import Image from 'next/image';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import GitHubIcon from '@material-ui/icons/GitHub';

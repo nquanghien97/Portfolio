@@ -7,10 +7,10 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css';
 import Image from 'next/image';
-import adidas from '../Assets/adidas.png'
-import music from '../Assets/music.png'
-import tesla from '../Assets/tesla.png'
-import crudCountry from '../Assets/crud-country.png'
+import adidas from '../assets/adidas.png'
+import music from '../assets/music.png'
+import tesla from '../assets/tesla.png'
+import crudCountry from '../assets/crud-country.png'
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 
 export default function MyPortfolio () {

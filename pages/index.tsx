@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import NavBar from './navbar'
 import HomePage from './home'
 import About from './about'
@@ -8,6 +7,7 @@ import MyPortfolio from './portfolio'
 import Contact from './contact'
 import Footer from './footer'
 import MessengerCustomerChat from 'react-messenger-customer-chat';
+import TechStack from './techStack'
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +20,7 @@ const Home: NextPage = () => {
       <NavBar />
       <HomePage />
       <About />
+      <TechStack />
       <MyPortfolio />
       <Contact />
       <Footer />

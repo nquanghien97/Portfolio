@@ -1,7 +1,7 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import Image from 'next/image';
-import avatar from '../Assets/avatar.png';
+import avatar from '../assets/avatar.png';
 
 export default function About () {
   return (

@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
 import Image from 'next/image';
-import logo from '../Assets/logo1.png';
+import logo from '../assets/logo1.png';
 import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 import { Link } from "react-scroll"
@@ -66,6 +66,18 @@ export default function NavBar () {
                     duration={500}
                   >
                     About
+                  </Link>
+                </li>
+                <li className="cursor-pointer text-xl block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">
+                  <Link 
+                    activeClass="active"
+                    to="tech-stack"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    TechStack
                   </Link>
                 </li>
                 <li className="cursor-pointer text-xl block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">
