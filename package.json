@@ -23,6 +23,7 @@
     "swiper": "8.1.0"
   },
   "devDependencies": {
+    "@netlify/plugin-nextjs": "^4.39.0",
     "@types/jquery": "^3.5.14",
     "@types/node": "17.0.23",
     "@types/react": "17.0.43",
