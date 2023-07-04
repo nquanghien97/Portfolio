@@ -11,9 +11,9 @@ export default function HomePage () {
         <Fade left>
           <div className="relative flex justify-center mx-auto w-[100vw] h-[100vh]">
             <div className="absolute inset-y-1/3 text-white w-3/4 flex flex-col justify-center items-center">
-                <h4 className="font-medium leading-tight text-2xl mt-0 mb-4 uppercase">Hello</h4>
+                <h1 className="font-medium leading-tight text-7xl font-serif uppercase">Hello</h1>
                 <div className="text-window">
-                  <h1 className="animate-charcter text-6xl mt-2 mb-2 p-4">I&apos;m&nbsp;Nguyen&nbsp;Quang&nbsp;Hien</h1>
+                  <h1 className="animate-charcter text-6xl mb-2 pb-4">I&apos;m&nbsp;Nguyen&nbsp;Quang&nbsp;Hien</h1>
                 </div>
                 <div className="text-mobile">
                   <h1 className="animate-charcter">I&apos;m</h1><br/>
